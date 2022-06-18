@@ -111,10 +111,28 @@ def voc_palette():
             [128, 64, 0], [0, 192, 0], [128, 192, 0], [0, 64, 128]]
 
 
+def my_cityscapes_classes():
+    """Cityscapes class names for external use."""
+    return [
+        'road', 'sidewalk', 'building', 'wall', 'fence', 'pole',
+        'traffic light', 'traffic sign', 'vegetation', 'terrain', 'sky',
+        'person', 'rider', 'car', 'truck', 'bus', 'train', 'motorcycle',
+        'bicycle'
+    ]
+
+def my_cityscapes_palette():
+    """Cityscapes palette for external use."""
+    return [[255, 255, 255], [255, 255, 255], [255, 255, 255], [255, 255, 255],
+            [255, 255, 255], [255, 255, 255], [255, 255, 255], [255, 255, 255],
+            [255, 255, 255], [255, 255, 255], [255, 255, 255], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0],
+            [0, 0, 0], [0, 0, 0]]
+
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
     'ade': ['ade', 'ade20k'],
-    'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug']
+    'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug'],
+    'my_cityscapes' :['my_cityscapes']
 }
 
 
